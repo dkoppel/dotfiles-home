@@ -25,7 +25,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+bindsym $mod+d exec /usr/bin/dmenu_run -b -fn "-xos4-terminus-medium-*-*-*-12-*-*-*-*-*-iso8859-2" -nb black -nf green -sf red -sb white
 
 # change focus
 bindsym $mod+j focus left
