@@ -139,3 +139,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Per application rules:
+
+for_window [ class='xfce4-notifyd' ] border 0 floating disable
