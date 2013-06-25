@@ -19,7 +19,7 @@ font -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-iso8859-2
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt 
+bindsym $mod+Return exec urxvt -vb 
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -140,6 +140,21 @@ bar {
         status_command i3status
 }
 
+# Default configs up here ^
+# customizations down here v
+
 # Per application rules:
 
-for_window [ class='xfce4-notifyd' ] border 0 floating disable
+for_window [class="xfce4-notifyd"] floating enable
+
+
+#Color settings (zenburn)
+
+#client.focused #525252 #1E1E1E #F5DEB3
+#client.focused_inactive #333333 #0F0F0F #E3CCA1
+#client.unfocused #333333 #010101 #85753A
+#client.urgent #856E23 #900000 #F5DEB3
+client.focused          #8faf9f #7f9f7f #ffffff #2e9ef4
+client.focused_inactive #333333 #3f3f3f #ffffff #484e50
+client.unfocused        #333333 #3f3f3f #888888 #292d2e
+client.urgent           #dca3a3 #cc9393 #ffffff #900000
