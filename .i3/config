@@ -154,7 +154,11 @@ for_window [class="xfce4-notifyd"] floating enable
 #client.focused_inactive #333333 #0F0F0F #E3CCA1
 #client.unfocused #333333 #010101 #85753A
 #client.urgent #856E23 #900000 #F5DEB3
+
 client.focused          #8faf9f #7f9f7f #ffffff #2e9ef4
 client.focused_inactive #333333 #3f3f3f #ffffff #484e50
 client.unfocused        #333333 #3f3f3f #888888 #292d2e
 client.urgent           #dca3a3 #cc9393 #ffffff #900000
+
+# Set client.background to work around urxvt bordering issue
+client.background #3f3f3f
