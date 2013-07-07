@@ -6,6 +6,13 @@ servers = (
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.freenode.net";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "yes";
   }
 );
 
@@ -64,7 +71,7 @@ aliases = {
   ATAG = "WINDOW SERVER";
   UNSET = "set -clear";
   RESET = "set -default";
-  NS = 'msg NickServ identify'
+  NS = "msg NickServ identify";
 };
 
 statusbar = {
@@ -191,3 +198,7 @@ settings = {
     theme = "zenbarn";
   };
 };
+keyboard = (
+  { key = "meta-w"; id = "command"; data = "win close"; },
+  { key = "meta-q"; id = "command"; data = "quit bye!"; }
+);
